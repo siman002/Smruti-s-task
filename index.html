@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9528dbccd1.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body onload=getTime()>
+    <div id="con" class="container">
+        <!-- navbar -->
+        <div class="nav">
+            <span class="logo">Task.</span>
+            <div class="navleft">
+                <button class="navbutton">Login</button>
+                <button class="navbutton">Signup</button>
+            </div>
+        </div>
+        <!-- Center -->
+        <div class="center">
+            <div class="CenterButtonGroup">
+                <button class="CenterButton" onclick=handlePrompt() >Prompt</button>
+                <button class="CenterButton" id="CBG"onclick=changeBg() >ChangeBG</button>
+                <button class="CenterButton" onclick="setTimeout(ChangeHeading, 5000);">Change Heading</button>
+
+            </div>
+            <div class="heading" id="HD">
+                Hello from Task.
+
+            </div>
+
+            <div class="date">
+                <div class="time">
+                    <span class="timeHeaading">Date</span>
+                    <span id="DATE" class="Count">1</span>
+                    
+                </div>
+                <div class="time">
+                    <span class="timeHeaading">Month</span>
+                    <span id="MONTH" class="Count">1</span>
+                    
+                </div>
+                <div class="time">
+                    <span class="timeHeaading">Year</span>
+                    <span id="YEAR" class="Count">1</span>
+                    
+                </div>
+            </div>
+
+            <div class="taskTime">
+                <div class="time">
+                    <span class="timeHeaading">Hours</span>
+                    <span id="HR" class="Count">1</span>
+                    
+                </div>
+                
+                <div class="time">
+                    <span class="timeHeaading">Minutes</span>
+                    <span id="MN" class="Count">1</span>
+                    
+                </div>
+                
+                <div class="time">
+                    
+                    <span class="timeHeaading">Seconds</span>
+                    <span id="SC" class="Count">1</span>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footerLeft">
+                <div class="logo">Task.</div>
+                <div class="footerLeftPara">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo optio, doloremque consequatur explicabo, odio vero ducimus minima consequuntur, veniam unde nemo tempore magni eos porro consectetur placeat. Nemo, nulla accusantium.</p>
+                </div>
+            </div>
+            <div class="footerCenter">
+                <span class="linkHeader">Useful Links</span>
+                <span class="link">Home</span>
+                <span class="Link">About</span>
+                <span class="Link">About</span>
+                <span class="Link">About</span>
+                <span class="Link">About</span>
+               
+
+
+
+            </div>
+            <div class="footerRight">
+                <span class="Contact">Contact</span>
+                <div class="ContactDetail">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Plot.45 CS PUR,BHUBANESWAR,751021</span>
+                </div>
+                <div class="ContactDetail">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 7894144901</span>
+                </div>
+                <div class="ContactDetail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ABC@gmail.com</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+function setInterval(){
+
+    var refresh=1000;
+mytime=setTimeout('getTime()',refresh)
+
+}
+
+function getTime(){
+        var date=new Date()
+        var hour= date.getHours();
+        var minute=date.getMinutes();
+        var Seconds=date.getSeconds();
+        var day=date.getDate();
+        var month=date.getMonth();
+        var year=date.getFullYear();
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+        document.getElementById("DATE").innerHTML=day
+        document.getElementById("MONTH").innerHTML=monthNames[month]
+        document.getElementById("YEAR").innerHTML=year
+        
+
+        document.getElementById("HR").innerHTML=hour
+        document.getElementById("MN").innerHTML=minute
+        document.getElementById("SC").innerHTML=Seconds
+      setInterval()  
+}
+
+
+function handlePrompt(){
+
+alert("Welcome")
+
+}
+
+
+    function randomcolor() {
+        return Math.floor(Math.random() * 255);
+    }
+
+
+    function changeBg(){
+         document.getElementById("con").style.backgroundColor='rgba(' 
+                + randomcolor() + ',' + randomcolor() 
+                + ',' + randomcolor() + '\)'   
+
+    }
+
+
+    function ChangeHeading(){
+       var a=["Welcome To Task","We provide  better Facilities "
+    ,"Be ready with  Task" ,"Manage your time with Task"
+    ]
+    var r=Math.floor(Math.random()*4);
+    document.getElementById("HD").innerHTML=a[r];
+
+
+    }
+</script>
+    
+</body>
+</html>

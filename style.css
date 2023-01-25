@@ -1,0 +1,179 @@
+.container{
+    padding: 10px;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+
+}
+
+.logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.navbutton{
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    font-weight: bold;
+    border-radius: 2px;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbutton:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+/* Center design */
+
+
+.center{
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heading{
+        margin:10px 20px;
+        font-size: 30PX;
+        display: flex;
+        align-items: center;justify-content: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.CenterButtonGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.CenterButton{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.CenterButton:hover{
+    background-color: black;
+    color: aliceblue;
+    transition:all 0.2s ease;
+}
+
+
+/* Time Design */
+
+.taskTime{
+    display: flex;
+
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 150px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.Count{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.timeHeaading{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* footer */
+
+.footer{
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+}
+.footerCenter{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerRight{
+    flex: 2;
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerLeftPara{
+
+    width: 80%;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.link{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: lighter;
+
+}
+
+.link:hover{
+    font-size: larger;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.Contact{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ContactDetail{
+display: flex;
+align-items: center;
+gap: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.linkHeader{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+/* date  */
+.date{
+    display: flex;
+
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 150px;
+}
+
+
+
